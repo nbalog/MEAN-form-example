@@ -1,5 +1,7 @@
 Example of writing to the MongoDB database using Angular form, reading from the database and printing the results
-
+# Screenshots
+![Create movie](https://github.com/nbalog/MEAN-form-example/blob/main/images/create-movie.png?raw=true)
+![Get movies](https://github.com/nbalog/MEAN-form-example/blob/main/images/get-movies.png?raw=true)
 # Installation
 ## Install project
 ``` git clone https://github.com/nbalog/MEAN-form-example.git ```
