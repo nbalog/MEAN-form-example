@@ -29,7 +29,7 @@ export class MovieListComponent implements OnInit, OnDestroy {
     this.isLoading = true;
     this.movieService.getMovies(this.moviesPerPage, this.currentPage);
     this.moviesSub = this.movieService
-      .getPostUpdateListener()
+      .getMovieUpdateListener()
       .subscribe((movieData: { movies: Movie[]; movieCount: number }) => {
         this.isLoading = false;
         this.totalMovies = movieData.movieCount;
