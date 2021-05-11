@@ -1,0 +1,24 @@
+<div class="container">
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form [formGroup]="form" (submit)="onSaveMovie()" *ngIf="!isLoading">
+    <mat-form-field>
+      <input matInput type="text" formControlName="name" placeholder="Movie Name">
+      <mat-error *ngIf="form.get('name').invalid">Please enter movie name</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" formControlName="quantity" placeholder="Quantity">
+      <mat-error *ngIf="form.get('quantity').invalid">Please enter quantity</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        <mat-option value="thriller">Thriller</mat-option>
+        <mat-option value="action">Action</mat-option>
+      </mat-select>
+      <mat-error *ngIf="form.get('category').invalid">Please enter category</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit">Save Movie</button>
+  </form>
+</mat-card>
+</div>
