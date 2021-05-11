@@ -1,0 +1,29 @@
+Example of writing to the MongoDB database using Angular form, reading from the database and printing the results
+
+# Installation
+## Install project
+``` git clone https://github.com/nbalog/mongoDB-tricks.git ```
+## Install NodeJS
+``` apt-get install nodejs ```   
+Run ``` npm install" ``` inside this project folder to install all dependencies.
+
+## Install MongoDB 
+### Add key
+``` curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add - ``` 
+### Write to sources.list.d
+``` echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list ```
+### Install MongoDB
+``` sudo apt install mongodb-org ```
+
+# Run
+### Start MongoDB on localhost
+``` sudo systemctl start mongod.service ```
+### Run backend  
+``` npm run start:server ```
+### Run frontend
+``` ng serve ``` 
+
+# Routes
+http://localhost:4200/createMovie    
+http://localhost:4200/getMovies   
+
