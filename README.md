@@ -3,8 +3,9 @@ Example of writing to the MongoDB database using Angular form, reading from the 
 # Installation
 ## Install project
 ``` git clone https://github.com/nbalog/MEAN-form-example.git ```
-## Install NodeJS
-``` apt-get install nodejs ```   
+## Install NodeJS and Angular
+``` apt-get install nodejs ```
+``` npm install -g @angular/cli ```     
 Run ``` npm install" ``` inside this project folder to install all dependencies.
 
 ## Install MongoDB 
