@@ -30,5 +30,5 @@ Run ``` npm install" ``` inside this project folder to install all dependencies.
 
 # Routes
 http://localhost:4200/createMovie    
-http://localhost:4200/getMovies   
+http://localhost:4200/getMovies  
 
